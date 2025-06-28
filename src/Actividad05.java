@@ -9,11 +9,11 @@ public class Actividad05 {
     }
     static boolean esVocal(String vocal){
         boolean esVocal = false;
-        if(vocal.toLowerCase().equals("a")
-            || vocal.toLowerCase().equals("e")
-            || vocal.toLowerCase().equals("i")
-            || vocal.toLowerCase().equals("o")
-            || vocal.toLowerCase().equals("u")){
+        if(vocal.equalsIgnoreCase("a")
+            || vocal.equalsIgnoreCase("e")
+            || vocal.equalsIgnoreCase("i")
+            || vocal.equalsIgnoreCase("o")
+            || vocal.equalsIgnoreCase("u")){
             esVocal = true;
         }
         return esVocal;
