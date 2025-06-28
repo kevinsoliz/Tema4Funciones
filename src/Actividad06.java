@@ -4,7 +4,8 @@ public class Actividad06 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduce un número: ");
-        System.out.println("Es primo: " + esPrimo(sc.nextInt()));
+        //System.out.println("Es primo: " + esPrimo(sc.nextInt()));
+        tomaPrimo(sc.nextInt());
     }
     static boolean esPrimo(int num) {
         boolean esPrimo = true;
@@ -19,6 +20,13 @@ public class Actividad06 {
             }
         }
         return esPrimo;
+    }
+    static void tomaPrimo(int limite){
+        for (int i = 0; i < limite; i++){
+            if (esPrimo(i)){
+                System.out.print(i + " ");
+            }
+        }
     }
 
 }
