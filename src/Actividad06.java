@@ -10,11 +10,9 @@ public class Actividad06 {
         boolean esPrimo = true;
         if (num < 2)
             esPrimo = false;
-        for (int i = 2; i < num && esPrimo; i++) { //La única manera en la que esPrimo será false seria
-                                                    //solo cuando num se menor que 2, para el resto siempre será true.
-            if (num % i == 0) {
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0)
                 esPrimo = false;
-            }
         }
         return esPrimo;
     }
