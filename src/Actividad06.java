@@ -6,15 +6,12 @@ public class Actividad06 {
         System.out.println("Introduce un número: ");
         System.out.println("Es primo: " + esPrimo(sc.nextInt()));
     }
-    static boolean esPrimo(int n){
-        boolean esPrimo = false;
-        if (n != 1){
-            if (n == 2)
-                esPrimo = true;
-            else if (n % 2 == 1)
-                esPrimo = true;
+    static boolean esPrimo(int num) {
+        if (num < 2) return false;
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) return false;
         }
-
-        return esPrimo;
+        return true;
     }
+
 }
