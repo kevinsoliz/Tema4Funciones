@@ -8,11 +8,15 @@ public class Actividad06 {
     }
     static boolean esPrimo(int num) {
         boolean esPrimo = true;
-        if (num < 2)
-            esPrimo = false;
-        for (int i = 2; i <= Math.sqrt(num); i++) {
-            if (num % i == 0)
+        if (num == 2)
+            esPrimo = true;
+        else if (num < 2 || num % 2 == 0)
                 esPrimo = false;
+        else {
+            for (int i = 3; i <= Math.sqrt(num); i += 2) { //De esta manera te saltas los pares
+                if (num % i == 0)
+                    esPrimo = false;
+            }
         }
         return esPrimo;
     }
