@@ -19,7 +19,7 @@ public class Actividad10 {
         if (n == 0)
             resultado = 1;
         else
-            resultado = a * potenciaRecursiva(a, (byte) (n - 1));
+            resultado = a * potenciaRecursiva(a, (byte) (n - 1)); // resultado = resultado * potenciaRecursiva(a, (byte) (n - 1)); esto siempre da 1
         return resultado;
     }
 }
