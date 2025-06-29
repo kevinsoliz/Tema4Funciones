@@ -11,6 +11,15 @@ public class Actividad10 {
         for (int i = 0; i < n; i++){
             resultado *= a;
         }
-        System.out.println("Resultado: " + resultado);
+        //System.out.println("Resultado: " + resultado);
+        System.out.println("Recursivamente: " + potenciaRecursiva(a, n));
+    }
+    static int potenciaRecursiva(byte a, byte n) {
+        int resultado = 1;
+        if (n == 0)
+            resultado = 1;
+        else
+            resultado = a * potenciaRecursiva(a, (byte) (n - 1));
+        return resultado;
     }
 }
