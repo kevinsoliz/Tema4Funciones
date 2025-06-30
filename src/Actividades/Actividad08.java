@@ -21,7 +21,7 @@ public class Actividad08 {
         }
         return resultado;
     }
-    static byte pedirValor(String prompt, Scanner sc){
+    public static byte pedirValor(String prompt, Scanner sc){
         byte valor = 0;
         while (true) {
             try {
