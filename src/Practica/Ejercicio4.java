@@ -14,7 +14,7 @@ public class Ejercicio4 {
     }
     static void numsAleaotorios(int cantidad, int minimo, int maximo){
         for (int i = 0; i < cantidad; i++){
-            int aleaotorio = (int)(Math.random() * minimo);
+            int aleaotorio = (int)(Math.random() * (maximo - minimo + 1) + minimo); //What da faaaaaaaaccccccccc?!!!!!!!!
             System.out.print(aleaotorio + " ");
         }
     }
