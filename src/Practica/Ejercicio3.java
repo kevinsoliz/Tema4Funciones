@@ -19,7 +19,7 @@ public class Ejercicio3 {
         numerosAmigos(limite);
     }
     static String sonAmigos(int a, int b){
-        return (sumaDivisores(a) == b && sumaDivisores(b) == a) ? "Son amigos" : "No son amigos"; // No sé si es and u or.
+        return (sumaDivisores(a) == b && sumaDivisores(b) == a) ? "Son amigos" : "No son amigos"; // No sé si es and u or. Es un AND.
     }
     static int sumaDivisores(int a){
         int suma = 0;
