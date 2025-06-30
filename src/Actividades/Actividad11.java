@@ -1,3 +1,7 @@
+package Actividades;
+
+import Actividades.Actividad08;
+
 import java.util.Scanner;
 
 public class Actividad11 {
